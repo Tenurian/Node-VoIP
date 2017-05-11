@@ -5,11 +5,11 @@ var ExpressPeerServer = require('peer').ExpressPeerServer;
 
 app.get('/', function(req, res) { res.send('Hello world!'); });
 
-var server = app.listen(PORT);
+// var server = app.listen(PORT);
 
-var options = {
-    debug: true
-  };
+// var options = {
+//     debug: true
+//   };
 
 //app.use('/api', ExpressPeerServer(server, options));
 // // OR
@@ -22,4 +22,7 @@ server.on('connection', function(id) {
     console.log(id);
   });
 
-server.listen(PORT);
+//server.listen(PORT);
+
+console.log('listening on: ' + process.env.IP +':'+process.env.PORT);
+server.listen(process.env.PORT);

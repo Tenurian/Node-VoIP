@@ -1,0 +1,16 @@
+{
+  "name": "node_voip_test",
+  "version": "0.1.0",
+  "description": "sandbox",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "peer": "^0.2.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "",
+  "license": "ISC"
+}

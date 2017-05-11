@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>NodeJS VoIP</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <!--  PeerJS API Key: vs6hpivac4sra4i  -->
+
+    <script>
+        var peer = new Peer('test-id', {
+            host: 'localhost',
+            port: 9000,
+            path: '/myapp'
+        });
+    </script>
+</body>
+
+</html>
